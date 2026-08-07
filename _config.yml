@@ -12,7 +12,7 @@ lang: fr
 #   - Site de type "username.github.io"        -> baseurl: ""
 #   - Site de type "username.github.io/apsbg"   -> baseurl: "/apsbg"
 baseurl: "/apsbg"
-url: "https://armel001.github.io"
+url: "https://armel001.github.io/apsbg/"
 
 # Coordonnées affichées en pied de page — à personnaliser
 contact_email: "contact@apsbg-guinee.org"
