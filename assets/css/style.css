@@ -264,53 +264,39 @@ p { margin: 0 0 1em; }
 .card__name {
   font-size: 1.08rem;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin: 0;
 }
 
-.card__profession {
-  color: var(--color-muted);
-  font-size: 0.92rem;
-  margin-bottom: 10px;
+.card__fields {
+  margin: 4px 0 0;
 }
 
-.card__tag {
-  display: inline-block;
-  background: var(--color-accent-soft);
-  color: var(--color-accent);
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.82rem;
-  padding: 4px 12px;
-  border-radius: 999px;
-  margin-bottom: 12px;
-}
-
-.card__meta {
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.card__bio {
-  font-size: 0.92rem;
-  color: var(--color-ink);
-  margin-bottom: 14px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card__contact {
+.card__field {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding-top: 10px;
+  gap: 6px;
+  padding: 7px 0;
   border-top: 1px solid var(--color-line);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
-.card__contact a {
-  font-size: 0.9rem;
+.card__field:first-child {
+  border-top: none;
+  padding-top: 10px;
+}
+
+.card__field dt {
+  flex: 0 0 150px;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.card__field dd {
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.card__field dd a {
   color: var(--color-accent);
   font-weight: 500;
 }

@@ -42,17 +42,22 @@ gardant exactement les mêmes noms de colonnes :
 | `id`                  | oui         | `1`, `2`, `3`…                    |
 | `nom`                 | oui         | `DOSSOU Fabrice`                  |
 | `profession`          | non         | `Médecin` (laisser vide si inconnu) |
-| `domaine_competence`  | non         | `Cardiologie`                     |
+| `specialite`          | non         | `Cardiologie`                     |
 | `secteur`             | non         | `Secteur public`, `Secteur privé`, `ONG / International`… |
 | `ville`               | non         | `Conakry` ou adresse/quartier      |
 | `email`               | non         | `f.dossou@example.com`            |
 | `telephone`           | non         | `+224 620 00 00 01`               |
 | `photo`               | non         | `dossou-fabrice.jpg`              |
-| `bio`                 | non         | Courte présentation ou activités complémentaires |
+| `domaine_competence`  | non         | Autres compétences / activités complémentaires |
 
 Le champ `nom` accepte le nom complet tel qu'il vous est fourni, dans
 l'ordre que vous préférez (« Prénom Nom » ou « NOM Prénom ») — le site
 n'essaie pas de deviner lequel est le prénom.
+
+Chaque fiche affiche tous les champs renseignés sous forme de liste
+étiquetée (Profession, Spécialité, Secteur d'activité, Adresse, Domaine
+de compétence, Tél, Email). Un champ laissé vide dans le CSV n'apparaît
+simplement pas sur la fiche.
 
 ⚠️ Si un champ contient une virgule (par ex. dans une bio), encadrez-le de
 guillemets doubles : `"Infirmier, spécialisé en soins intensifs."`

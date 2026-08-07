@@ -17,34 +17,28 @@
   </div>
 
   <h3 class="card__name">{{ m.nom }}</h3>
-  {% if m.profession and m.profession != "" %}
-    <p class="card__profession">{{ m.profession }}</p>
-  {% endif %}
 
-  {% if m.domaine_competence and m.domaine_competence != "" %}
-    <span class="card__tag">{{ m.domaine_competence }}</span>
-  {% endif %}
-
-  {% capture meta_line %}
-    {%- if m.secteur and m.secteur != "" -%}{{ m.secteur }}{%- endif -%}
-    {%- if m.secteur and m.secteur != "" and m.ville and m.ville != "" %} · {% endif -%}
-    {%- if m.ville and m.ville != "" -%}{{ m.ville }}{%- endif -%}
-  {% endcapture %}
-  {% assign meta_line = meta_line | strip %}
-  {% if meta_line != "" %}
-    <p class="card__meta">{{ meta_line }}</p>
-  {% endif %}
-
-  {% if m.bio and m.bio != "" %}
-    <p class="card__bio">{{ m.bio }}</p>
-  {% endif %}
-
-  {% capture contact_line %}
-    {% if m.email and m.email != "" %}<a href="mailto:{{ m.email }}">{{ m.email }}</a>{% endif %}
-    {% if m.telephone and m.telephone != "" %}<a href="tel:{{ m.telephone | replace: ' ', '' }}">{{ m.telephone }}</a>{% endif %}
-  {% endcapture %}
-  {% assign contact_line = contact_line | strip %}
-  {% if contact_line != "" %}
-    <div class="card__contact">{{ contact_line }}</div>
-  {% endif %}
+  <dl class="card__fields">
+    {% if m.profession and m.profession != "" %}
+      <div class="card__field"><dt>Profession</dt><dd>{{ m.profession }}</dd></div>
+    {% endif %}
+    {% if m.specialite and m.specialite != "" %}
+      <div class="card__field"><dt>Spécialité</dt><dd>{{ m.specialite }}</dd></div>
+    {% endif %}
+    {% if m.secteur and m.secteur != "" %}
+      <div class="card__field"><dt>Secteur d'activité</dt><dd>{{ m.secteur }}</dd></div>
+    {% endif %}
+    {% if m.ville and m.ville != "" %}
+      <div class="card__field"><dt>Adresse</dt><dd>{{ m.ville }}</dd></div>
+    {% endif %}
+    {% if m.domaine_competence and m.domaine_competence != "" %}
+      <div class="card__field"><dt>Domaine de compétence</dt><dd>{{ m.domaine_competence }}</dd></div>
+    {% endif %}
+    {% if m.telephone and m.telephone != "" %}
+      <div class="card__field"><dt>Tél</dt><dd><a href="tel:{{ m.telephone | replace: ' ', '' }}">{{ m.telephone }}</a></dd></div>
+    {% endif %}
+    {% if m.email and m.email != "" %}
+      <div class="card__field"><dt>Email</dt><dd><a href="mailto:{{ m.email }}">{{ m.email }}</a></dd></div>
+    {% endif %}
+  </dl>
 </article>

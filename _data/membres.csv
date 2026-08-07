@@ -1,4 +1,4 @@
-id,nom,profession,domaine_competence,secteur,ville,email,telephone,photo,bio
+id,nom,profession,specialite,secteur,ville,email,telephone,photo,domaine_competence
 1,Anihouvi Yann Abdias axel,,Gyneco obstétrique,Secteur public,Hamdalaye CBG,axeltokpo@gmail.com,623583370,,PDG de Axe transfert et Dreams Become Reality
 2,SEGBEDJI CRESPIN SAINOU,,Gestionnaire des hopitaux,Secteur privé,Miniere,crespinsainou@gmail.com,629656081,,"Transport des personnes et debien , Transfert dargent"
 3,MITCHASSI Christelle Fêmi,,Médecin,Secteur public,Hafia 2,femimitchassi53@gmail.com,629371213,,Ventes

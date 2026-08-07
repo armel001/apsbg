@@ -18,7 +18,7 @@ title: Accueil
 
 <section class="stats">
   {% assign membres = site.data.membres %}
-  {% assign domaines = membres | map: "domaine_competence" | uniq | compact %}
+  {% assign domaines = membres | map: "specialite" | uniq | compact %}
   <div class="stats__item">
     <span class="stats__number">{{ membres.size }}</span>
     <span class="stats__label">Membres inscrits</span>
