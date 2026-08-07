@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="brand-banner">
+    <img
+      src="{{ '/assets/images/banner.png' | relative_url }}"
+      alt="{{ site.title }} — {{ site.tagline }}"
+      class="brand-banner__img">
+  </div>
+
+  <nav class="site-nav">
+    <div class="site-nav__inner">
+      <a href="{{ '/' | relative_url }}" class="site-nav__brand">{{ site.title }}</a>
+      <div class="site-nav__links">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Accueil</a>
+        <a href="{{ '/membres/' | relative_url }}"{% if page.url contains 'membres' %} aria-current="page"{% endif %}>Catalogue des membres</a>
+      </div>
+    </div>
+  </nav>
+</header>

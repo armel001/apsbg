@@ -1,0 +1,31 @@
+# ---------------------------------------------------------
+# Configuration du site — APSBG
+# ---------------------------------------------------------
+title: "APSBG"
+tagline: "Amicale des Professionnels de Santé d'origine Béninoise en Guinée"
+description: >-
+  Annuaire des membres de l'APSBG : professionnels de santé d'origine
+  béninoise exerçant en République de Guinée.
+lang: fr
+
+# IMPORTANT — à adapter selon votre dépôt GitHub (voir README.md) :
+#   - Site de type "username.github.io"        -> baseurl: ""
+#   - Site de type "username.github.io/apsbg"   -> baseurl: "/apsbg"
+baseurl: ""
+url: ""
+
+# Coordonnées affichées en pied de page — à personnaliser
+contact_email: "contact@apsbg-guinee.org"
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
