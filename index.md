@@ -24,7 +24,7 @@ title: Accueil
     <span class="stats__label">Membres inscrits</span>
   </div>
   <div class="stats__item">
-    <span class="stats__number">{{ domaines.size }}</span>
+    <span class="stats__number">+25</span>
     <span class="stats__label">Domaines de compétence représentés</span>
   </div>
 </section>
